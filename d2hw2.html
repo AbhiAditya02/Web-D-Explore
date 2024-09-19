@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        /* Style for the form box */
+        .form-box {
+            width: 400px;
+            padding: 20px;
+            border: 1px solid black;
+            margin: 20px auto;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="form-box">
+    <form action="">
+        <label for="salutation" >Salutation</label><br>
+        <select id="salutation" name="salutation">
+            <option value="select">--select--</option>
+            <option value="---">None</option>
+            <option value="mr">Mr</option>
+            <option value="ms">Ms</option>
+            <option value="mrs">Mrs</option>
+            <option value="dr">Dr</option>
+        </select>        <br><br>
+
+        <label for="firstname">First name:</label>
+        <input type="text" id="firstname" name="firstname"> <br><br>
+
+        <label for="lastname">Last name:</label>
+        <input type="text" id="lastname" name="lastname">   <br><br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" class="gender-input">
+        <label for="male" class="gender-input">Male</label>
+        <input type="radio" id="female" name="gender" value="female" class="gender-input">
+        <label for="female" class="gender-input">Female</label>     <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">        <br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">     <br><br>
+
+        <label for="address">Address:</label>       <br>
+        <textarea id="address" name="address" rows="5"></textarea>      <br><br>
+
+        <input type="submit" value="Submit">        <br><br>
+    </form>
+    </div>
+</body>
+</html>
